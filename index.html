@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS ANIMATION</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: aliceblue;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin: 5px;
+        /* animation-name: expand;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite; */
+        /* transition: 1s ease-in-out; */
+      }
+      div:hover {
+        /* animation-play-state: paused; */
+        background-color: blueviolet;
+        /* transform: rotate(45deg); */
+        /* transform: rotateY(180deg); */
+        /* transform: rotateX(180deg); */
+        /* transform: scale(2) rotateY(180deg); */
+        transform: skew(45deg);
+        transform-origin: top left;
+        /* transform: translate(50px, 50px); */
+      }
+      @keyframes expand {
+        /* from {
+          width: 200px;
+        }
+        to {
+          width: 600px;
+        } */
+        0% {
+          width: 200px;
+          /* height: 200px; */
+        }
+        50% {
+          width: 600px;
+          /* height: 500px; */
+          /* background-color: rgb(25, 255, 113); */
+        }
+        100% {
+          width: 200px;
+          /* height: 200px; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello</div>
+    <a href="http://127.0.0.1:5500/loader.html">click</a>
+  </body>
+</html>
